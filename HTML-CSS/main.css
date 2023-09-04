@@ -1,0 +1,24 @@
+body {
+    background-color: #D9D9D9; /* Definir cor de fundo */
+    /*font-family: "Courier New", Courier, monospace; /* Trocar fonte por uma mais moderna*/
+}
+
+h1 {
+    text-align: center; /* Centralizar o título */
+    background-color: #262626; /* Cor de fundo do título */
+    color: #F2F2F2; /* Cor do texto */
+    padding: 20px; /* Espaçamento interno do título */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+h3 {
+    display: inline; /* Tornar os elementos 3h colunas */
+    color: #737373;
+}
+
+/* Estilo para as barras de separação "|" */
+h3:not(:last-child)::after {
+    content: " | "; /* Adiciona uma barra de separação entre os h3, exceto o último */
+    color: #0D0D0D; /* Cor da barra de separação */
+}
+
