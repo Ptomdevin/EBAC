@@ -4,25 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>O Mensageiro</title>
+    <title>Correio Digital</title>
     <link rel="stylesheet" href="main.css">
 
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="logo" alt="Logo">
+        <button id="botao-login">Login</button>
+
+        <div class="container">
+            <h1>Correio Digital</h1>
+            <!--<div class="overlay">
+                <p>Data: 13/09/2023</p>
+                <p>Hora: 14:30</p>
+            </div>-->
+            <div class="overlay">
+                <p id="data">Data: </p>
+                <p id="hora">Hora: </p>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="Ir para seção Brasil">Brasil</a>
+                    </li>
+                    <li>
+                        <a href="Ir para seção Economia">Economia</a>
+                    </li>
+                    <li>
+                        <a href="Educação e Ciência">Educação e Ciência</a>
+                    </li>
+                    <li>
+                        <a href="Esportes">Esporte</a>
+                    </li>
+                    <li>
+                        <a href="Games">Games</a>
+                    </li>
+                    <li>
+                        <a href="Internaciona">Internacional</a>
+                    </li>
+                    <li>
+                        <a href="Opinião">Opinião</a>
+                    </li>
+                    <li>
+                        <a href="Política">Polítca</a>
+                    </li>
+                    <li>
+                        <a href="Saúde">Saúde</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </header>
-    <div><h1>O Mensageiro</h1>
+    <div>
+        <hr class="linha-horizontal">
+        <hr class="linha-horizontal">
     </div>
-    <div> 
-        <h3>Esportes</h3>
-        <h3>Política</h3>
-        <h3>Internacional</h3>
-        <h3>Economia</h3>
-        <h3>Educação e Ciência</h3>
-    </div>
+    <section id="Brasil">
+        <div class="container Brasil">
+            <h2>Brasil</h2>
+            <div class="Article"
+                <article>
+                    <img src="/Users/umbrauser/Documents/GitHub/EBAC/HTML-CSS/Imagens/OCDE_SFIMG_BR.jpeg" alt="Imagem sobre materia de Brasil">
+                    <header>
+                        <time class="creation-date">2023/09/19 às 12:00</time>
+                    </header>
+                    <h3>OCDE quase dobra projeção do PIB do Brasil para 3,2% em 2023</h3>
+                    <p>
+                        A Organização para Cooperação e Desenvolvimento Economico (OCDE) projeta agora crescimento de 3,2% da economia brasileira neste ano. É quase o dobro de sua estimativa de junho, mas aponta expansão mais modesta para 2024. Globalmente, o crescimento continuará fraco, mas positivo.
+                    </p>
+                    <a href="#" title="Leia a notícia completa"> Ler mais </a>
+                </article>
+                
+            </div>
+
+        </div>
+    </section>
+
+    <div class="vertical-line"></div>
+
     
 </body>
 </html>

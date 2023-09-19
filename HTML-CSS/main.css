@@ -4,21 +4,109 @@ body {
 }
 
 h1 {
-    text-align: center; /* Centralizar o título */
-    background-color: #262626; /* Cor de fundo do título */
-    color: #F2F2F2; /* Cor do texto */
-    padding: 20px; /* Espaçamento interno do título */
-    margin-bottom: 20px; /* Espaçamento abaixo do título */
+    text-align: center;
+    background-image: linear-gradient(to right, #000000, #4d4a4a, #000000); /* Degrade de preto para cinza e volta para preto */
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-size: 100% 100px; /* Altura da barra de degradê */
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    margin-top: 40px
 }
 
-h3 {
-    display: inline; /* Tornar os elementos 3h colunas */
-    color: #737373;
+.container {
+    position: relative; /* Crie um contexto de posicionamento */
+
+}
+
+.overlay {
+    position: absolute; /* Posicione absolutamente em relação ao .container */
+    top: 0; /* Alinhe a parte superior da sobreposição com a parte superior do .container */
+    left: 20px; /* Alinhe a parte esquerda da sobreposição com a parte esquerda do .container */
+    color: rgb(244, 241, 241); /* Cor do texto da data e hora */
+    
+}
+
+ul {
+    text-align: center;
+    padding: 0; /* Remova o preenchimento padrão da lista */
+}
+
+li {
+    display: inline-block; /* Tornar os elementos em linha */
+    color: #444; /* Cor do texto em cinza escuro */
+    font-family: "Cheltenham", serif;
+    margin: 0 10px; /* Espaçamento horizontal entre os itens */
+    transition: color 0.3s; /* Transição suave de cor ao passar o mouse */
+    list-style: none;
+}
+
+header li a {
+    color: #111010;
 }
 
 /* Estilo para as barras de separação "|" */
-h3:not(:last-child)::after {
+li:not(:last-child)::after {
     content: " | "; /* Adiciona uma barra de separação entre os h3, exceto o último */
-    color: #0D0D0D; /* Cor da barra de separação */
+    color: #aeacacd2; /* Cor da barra de separação */
+    margin: 0 5px;
+}
+
+.linha-horizontal {
+    width: 100%; /* Largura igual à largura da classe .container */
+    height: 2px; /* Altura da linha */
+    background-color: #000; /* Cor da linha */
+    margin: 5px 0; /* Margens para espaçamento entre as linhas */
+    border: none; /* Sem bordas para uma linha sólida */
+}
+
+/* Estilizando o botão de login */
+#botao-login {
+    position: absolute; /* Posicionamento absoluto */
+    top: 7px; /* Distância do topo */
+    right:20px; /* Distância da direita */
+    background-color: #111010; /* Cor de fundo cinza claro */
+    color: #fff; /* Cor do texto branco */
+    border: none; /* Sem borda */
+    padding: 5px 10px; /* Espaçamento interno */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+    border-radius: 5px; /* Borda arredondada */
+}
+
+/* Estilizando o botão de login ao passar o mouse */
+#botao-login:hover {
+    background-color: #ff0000; /* Cor de fundo mais escura ao passar o mouse */
+}
+
+/* Estilo para a linha vertical */
+.vertical-line {
+    position: fixed;
+    top: 25%;
+    right: 25%; /* Afastado a 25% da margem direita */
+    height: 100%; /* Altura total da página */
+    width: 1px; /* Espessura da linha */
+    background-color: rgb(122, 122, 122); /* Cor da linha (preto no exemplo) */
+}
+
+/* Estilo para o contêiner */
+.Brasil {
+    width: 20%;
+}
+
+/* Estilo para os elementos "h3" dentro do contêiner */
+.Brasil h3 {
+    width: 100%; /* Ocupa toda a largura do contêiner */
+    background-color: transparent; /* Cor de fundo para destacar os títulos */
+    text-align: justify;
+    font-family: "Cheltenham", serif;
+}
+
+/* Estilo para os elementos "p" dentro do contêiner */
+.Brasil p {
+    width: 100%; /* Ocupa toda a largura do contêiner */
+    margin: 0; /* Remova margens para evitar espaços em branco */
+    text-align: justify;
+    font-family: "Cheltenham", serif;
 }
 
