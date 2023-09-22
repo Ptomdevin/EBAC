@@ -1,44 +1,43 @@
+/* Estilos gerais */
 body {
-    background-color: #D9D9D9; /* Definir cor de fundo */
-    /*font-family: "Courier New", Courier, monospace; /* Trocar fonte por uma mais moderna*/
+    background-color: #D9D9D9;
 }
 
 h1 {
     text-align: center;
-    background-image: linear-gradient(to right, #000000, #4d4a4a, #000000); /* Degrade de preto para cinza e volta para preto */
+    background-image: linear-gradient(to right, #000000, #4d4a4a, #000000);
     color: white;
     padding: 20px;
     margin-bottom: 20px;
-    background-size: 100% 100px; /* Altura da barra de degradê */
+    background-size: 100% 100px;
     background-repeat: no-repeat;
     background-position: center bottom;
-    margin-top: 40px
+    margin-top: 40px;
+    font-family: Georgia, serif, Courier, monospace;
 }
 
 .container {
-    position: relative; /* Crie um contexto de posicionamento */
-
+    position: relative;
 }
 
 .overlay {
-    position: absolute; /* Posicione absolutamente em relação ao .container */
-    top: 0; /* Alinhe a parte superior da sobreposição com a parte superior do .container */
-    left: 20px; /* Alinhe a parte esquerda da sobreposição com a parte esquerda do .container */
-    color: rgb(244, 241, 241); /* Cor do texto da data e hora */
-    
+    position: absolute;
+    top: 0;
+    left: 20px;
+    color: rgb(244, 241, 241);
 }
 
 ul {
     text-align: center;
-    padding: 0; /* Remova o preenchimento padrão da lista */
+    padding: 0;
 }
 
 li {
-    display: inline-block; /* Tornar os elementos em linha */
-    color: #444; /* Cor do texto em cinza escuro */
+    display: inline-block;
+    color: #444;
     font-family: "Cheltenham", serif;
-    margin: 0 10px; /* Espaçamento horizontal entre os itens */
-    transition: color 0.3s; /* Transição suave de cor ao passar o mouse */
+    margin: 0 10px;
+    transition: color 0.3s;
     list-style: none;
 }
 
@@ -46,67 +45,76 @@ header li a {
     color: #111010;
 }
 
-/* Estilo para as barras de separação "|" */
 li:not(:last-child)::after {
-    content: " | "; /* Adiciona uma barra de separação entre os h3, exceto o último */
-    color: #aeacacd2; /* Cor da barra de separação */
+    content: " | ";
+    color: #aeacacd2;
     margin: 0 5px;
 }
 
 .linha-horizontal {
-    width: 100%; /* Largura igual à largura da classe .container */
-    height: 2px; /* Altura da linha */
-    background-color: #000; /* Cor da linha */
-    margin: 5px 0; /* Margens para espaçamento entre as linhas */
-    border: none; /* Sem bordas para uma linha sólida */
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    margin: 5px 0;
+    border: none;
 }
 
-/* Estilizando o botão de login */
 #botao-login {
-    position: absolute; /* Posicionamento absoluto */
-    top: 7px; /* Distância do topo */
-    right:20px; /* Distância da direita */
-    background-color: #111010; /* Cor de fundo cinza claro */
-    color: #fff; /* Cor do texto branco */
-    border: none; /* Sem borda */
-    padding: 5px 10px; /* Espaçamento interno */
-    cursor: pointer; /* Cursor de mão ao passar o mouse */
-    border-radius: 5px; /* Borda arredondada */
+    position: absolute;
+    top: 7px;
+    right: 20px;
+    background-color: #111010;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-/* Estilizando o botão de login ao passar o mouse */
 #botao-login:hover {
-    background-color: #ff0000; /* Cor de fundo mais escura ao passar o mouse */
+    background-color: #ff0000;
 }
 
-/* Estilo para a linha vertical */
 .vertical-line {
     position: fixed;
     top: 25%;
-    right: 25%; /* Afastado a 25% da margem direita */
-    height: 100%; /* Altura total da página */
-    width: 1px; /* Espessura da linha */
-    background-color: rgb(122, 122, 122); /* Cor da linha (preto no exemplo) */
+    right: 25%;
+    height: 100%;
+    width: 1px;
+    background-color: rgb(122, 122, 122);
 }
 
-/* Estilo para o contêiner */
+/* Estilo para o contêiner Brasil */
 .Brasil {
-    width: 20%;
+    width: 100%; /* Utilize a largura completa do contêiner pai */
 }
 
-/* Estilo para os elementos "h3" dentro do contêiner */
-.Brasil h3 {
-    width: 100%; /* Ocupa toda a largura do contêiner */
-    background-color: transparent; /* Cor de fundo para destacar os títulos */
-    text-align: justify;
-    font-family: "Cheltenham", serif;
+.Brasil .Article img {
+    max-width: 450px; /* Define a largura máxima da imagem como 100% do contêiner pai (elemento <article>) */
+    height: auto; /* Mantém a proporção original da imagem */
 }
 
-/* Estilo para os elementos "p" dentro do contêiner */
-.Brasil p {
-    width: 100%; /* Ocupa toda a largura do contêiner */
-    margin: 0; /* Remova margens para evitar espaços em branco */
-    text-align: justify;
+/* Estilo para os elementos <article> dentro do contêiner Brasil */
+.Brasil article {
+    display: inline-block; /* Exibe os elementos lado a lado */
+    width: calc(33.33% - 10px); /* Defina a largura desejada para cada <article> (33.33% no seu caso) */
+    margin: 0 30px; /* Adicione margens entre os elementos para evitar que fiquem muito próximos */
+    box-sizing: border-box; /* Certifique-se de que as margens não afetem a largura total */
+    vertical-align: top; /* Alinhe os elementos ao topo da linha */
+    text-align: justify; /* Alinhe o texto ao centro horizontalmente */
+}
+
+.Brasil .Article article {
+    margin-bottom: 10px; /* Define a margem de 2px na parte inferior do elemento article */
+}
+
+.Brasil .Article a {
+    background-color:#86858584;
+    display: inline-block;
+    color: rgb(10, 10, 10);
     font-family: "Cheltenham", serif;
+    margin: 0 10px;
+    transition: color 0.3s;
+    list-style: none;
 }
 
