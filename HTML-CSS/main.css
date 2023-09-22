@@ -16,6 +16,29 @@ h1 {
     font-family: Georgia, serif, Courier, monospace;
 }
 
+/* Estilo para a barra de busca */
+.search-bar {
+    position: absolute; /* Posição absoluta para que fique no canto superior direito */
+    top: 7px; /* Alinhado ao topo */
+    right: 100px; /* Alinhado à direita, ajuste conforme necessário */
+    display: flex; /* Para alinhar a imagem e a caixa de pesquisa lado a lado */
+    align-items: center; /* Centralizar verticalmente */
+}
+
+/* Estilo para a imagem da lupa */
+.search-bar img {
+    width: 20px; /* Ajuste o tamanho conforme necessário */
+    height: 20px; /* Ajuste o tamanho conforme necessário */
+    margin-right: 5px; /* Espaço à direita da imagem */
+}
+
+/* Estilo para a caixa de pesquisa */
+.search-bar input[type="text"] {
+    padding: 5px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda para a caixa de pesquisa */
+    border-radius: 5px; /* Borda arredondada */
+}
+
 .container {
     position: relative;
 }
